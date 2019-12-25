@@ -296,7 +296,7 @@ class WarpsPro extends PluginBase
 								return true;
 							}
 
-							if(Server::getInstance()->loadLevel($data[$this->warp_id]["world"]) != false)
+							if(Server::getInstance()->loadLevel($data[$this->warp_id]["world"]) != true)
 							{
 								$curr_world = Server::getInstance()->getLevelByName($data[$this->warp_id]["world"]);
 								$pos = new Position(
